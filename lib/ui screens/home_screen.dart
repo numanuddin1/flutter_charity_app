@@ -8,9 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../widgets/card.dart';
 
 class MyHomePage extends StatefulWidget {
-  final String title;
 
-  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -100,13 +98,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Expanded(
+                    flex: 1,
                       child: Container(
                     width: double.infinity,
                     margin: EdgeInsets.symmetric(horizontal: 16),
-
                     child: TargetItem(),
                   )),
-                  Expanded(flex: 3, child: NewsItem()),
+                  Padding(padding: EdgeInsets.only(top: 10)),
+                  Expanded(flex: 2, child: NewsItem()),
                 ],
               ),
             ),

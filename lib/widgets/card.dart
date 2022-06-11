@@ -12,7 +12,7 @@ class CardWidget extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => PaymentScreen(title: title),
+          builder: (_) => PaymentScreen(),
         ));
       },
       child: Card(

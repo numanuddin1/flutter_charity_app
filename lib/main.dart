@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_practice3/ui%20screens/home_screen.dart';
+import 'package:flutter_practice3/ui%20screens/tab_screen.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+  ));
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]);
   runApp(MyApp());
 }
 
@@ -11,10 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Practice',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+        accentColor: Color(0xFF87E47C),
         fontFamily: 'Poppins'
       ),
-      home: MyHomePage(title: 'Flutter Practice'),
+      home:  TabScreen(),
     );
   }
 }
