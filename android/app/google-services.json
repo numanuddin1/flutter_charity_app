@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "298911742631",
+    "firebase_url": "https://flutter-app-3ad95-default-rtdb.firebaseio.com",
+    "project_id": "flutter-app-3ad95",
+    "storage_bucket": "flutter-app-3ad95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298911742631:android:13164be2481fc87dad7982",
+        "android_client_info": {
+          "package_name": "com.example.firebase_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298911742631-ffvpp3rf091c59ahm0ianm0tbt9kjauh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_flutter",
+            "certificate_hash": "0886a228a890bdc1f1c222006ef498311ad43026"
+          }
+        },
+        {
+          "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFxusEzchQmMpF9Cs35B7GHnVPyfDyWc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298911742631:android:75900de82337e4caad7982",
+        "android_client_info": {
+          "package_name": "com.example.flutter_practice3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFxusEzchQmMpF9Cs35B7GHnVPyfDyWc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298911742631:android:c667b395f6e31220ad7982",
+        "android_client_info": {
+          "package_name": "com.example.insta_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFxusEzchQmMpF9Cs35B7GHnVPyfDyWc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298911742631-p5m4isc0t3a50ea12s14uv5etdf5vas0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

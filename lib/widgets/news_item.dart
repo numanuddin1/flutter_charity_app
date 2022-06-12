@@ -1,9 +1,17 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
-class NewsItem extends StatelessWidget {
+class NewsItem extends StatefulWidget {
   const NewsItem({Key? key}) : super(key: key);
+
+  @override
+  State<NewsItem> createState() => _NewsItemState();
+}
+
+class _NewsItemState extends State<NewsItem> {
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +34,9 @@ class NewsItem extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             Padding(
-                padding: EdgeInsets.symmetric(vertical: 10)),
+                padding: EdgeInsets.symmetric(vertical: 06)),
             Text(
-                'Testing,TestingTestingTestingTestingTestingTestingTestingTesting,TestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTesting',
+                'TestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTesting',
                 style: TextStyle(color: Colors.white)),
           ],
         ),

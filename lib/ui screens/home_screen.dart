@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_practice3/widgets/news.dart';
-import 'package:flutter_practice3/widgets/target_monthly.dart';
+import 'package:flutter_practice3/widgets/news_item.dart';
+import 'package:flutter_practice3/widgets/card_target_monthly.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../widgets/card.dart';
+import '../widgets/card_category.dart';
+import 'amount_screen.dart';
+import 'monthly_leaderboard.dart';
 
 class MyHomePage extends StatefulWidget {
 
@@ -85,13 +87,27 @@ class _MyHomePageState extends State<MyHomePage> {
                         crossAxisCount: 3,
                         children: [
                           CardWidget(
-                            title: 'Donate',
+                            title: 'Zakat', image: 'assets/images/zakat.png', onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => AmountScreen(),
+                            ));
+                          },
                           ),
                           CardWidget(
-                            title: 'Sadqat',
+                            title: 'Sadqat', image: 'assets/images/sadqat_icon.png',
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => AmountScreen(),
+                              ));
+                            },
                           ),
                           CardWidget(
-                            title: 'Maonthly',
+                            title: 'Monthly', image: 'assets/images/monthly_icon.png',
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => MonthlyLeaderBoard(),
+                              ));
+                            },
                           ),
                         ],
                       ),

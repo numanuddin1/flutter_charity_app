@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_practice3/ui%20screens/home_screen.dart';
-import 'package:flutter_practice3/ui%20screens/payment_screen.dart';
+import 'package:flutter_practice3/ui%20screens/amount_screen.dart';
+import 'package:flutter_practice3/ui%20screens/profile_screen.dart';
 
 class TabScreen extends StatefulWidget {
 
@@ -14,7 +15,7 @@ class TabScreen extends StatefulWidget {
 class _TabScreenState extends State<TabScreen> {
   final List<Map<String, dynamic>> _pages = [
     {'page': MyHomePage(), 'title': 'Home Screen'},
-    {'page': PaymentScreen(), 'title': 'Payment Screen'},
+    {'page': ProfileScreen(), 'title': 'Profile Screen'},
   ];
   int selectedPageIndex = 0;
 

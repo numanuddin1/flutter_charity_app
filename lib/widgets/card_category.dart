@@ -1,29 +1,28 @@
 import 'package:flutter/material.dart';
 
-import '../ui screens/payment_screen.dart';
+import '../ui screens/amount_screen.dart';
 
 class CardWidget extends StatelessWidget {
   final String title;
+  final String image;
+  final VoidCallback onTap;
 
-  CardWidget({Key? key, required this.title}) : super(key: key);
+  CardWidget({Key? key, required this.title, required this.image, required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => PaymentScreen(),
-        ));
-      },
+      onTap: onTap,
       child: Card(
         elevation: 3,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Padding(padding: EdgeInsets.symmetric(vertical: 5)),
             Image.asset(
-              'assets/images/donate.png',
-              height: 40,
+              image,
+              height: 30,
             ),
             // CircleAvatar(
             //   radius: 24,
@@ -32,6 +31,7 @@ class CardWidget extends StatelessWidget {
             // ),
             Padding(padding: EdgeInsets.symmetric(vertical: 5)),
             Text(title),
+            Padding(padding: EdgeInsets.symmetric(vertical: 5)),
           ],
         ),
       ),
