@@ -1,4 +1,4 @@
-# flutter_practice3
+# flutter_charity_app
 
 A new Flutter project.
 
